@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.5.0/web3.min.js"
+      integrity="sha512-FhAl50BpK3gf9K//lbAWek9EEQEtGQyyXZNc1fuwcC2tVf2cskiJBcumXY0zJksYtms6S5cqubp1MNfUYTkO2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="./assets/app.css" />
+    <script
+      src="./scripts/app.js"
+      type="module"
+      defer></script>
+    <title>EtherdApp</title>
+  </head>
+  <body>
+    <header class="top-bar">
+      <h1>EtherdApp</h1>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <div class="form-control">
+            <input
+              type="text"
+              name="accountNumber"
+              id="accountNumber"
+              placeholder="Wallet to send from" />
+
+            <button
+              id="checkBalance"
+              class="btn btn-primary">
+              Check Balance
+            </button>
+            <div>
+              <span>Eth Balance</span>
+            </div>
+            <div
+              id="balance"
+              class="balance"></div>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="amount"
+              id="amount"
+              placeholder="Amount to transfer" />
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="toAccountNumber"
+              id="toAccountNumber"
+              placeholder="Sending to" />
+          </div>
+          <div class="form-control">
+            <button
+              id="sendTx"
+              class="btn btn-primary">
+              Transfer
+            </button>
+          </div>
+        </section>
+      </div>
+      <section>
+        <h4>Total Blocks:</h4>
+        <div id="blockNumber">Loading...</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
