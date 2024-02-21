@@ -8,11 +8,11 @@ const sendButton = document.querySelector('#sendTx');
 const toAccountInput = document.querySelector('#toAccountNumber');
 const valueInput = document.querySelector('#amount');
 
-let acccounts;
+let accounts;
 
 async function checkBalance() {
   if (typeof ethereum !== undefined) {
-    acccounts = await ethereum.request({ method: 'eth_requestAccounts' });
+    accounts = await ethereum.request({ method: 'eth_requestAccounts' });
  
     // Get the balance...
     const balance = await ethereum.request({ method: 'eth_getBalance', params: [accountInput.value, 'latest'] });
@@ -42,6 +42,7 @@ async function sendFunds() {
       method: 'eth_sendTransaction',
       params: params,
     });
+    console.log('Transaction hash:', response);
   } catch (error) {
     console.log(error);
   }

@@ -1,0 +1,22 @@
+{
+  "name": "etherdapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xMayo/EtherdApp.git"
+  },
+  "author": "0xMayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xMayo/EtherdApp/issues"
+  },
+  "homepage": "https://github.com/0xMayo/EtherdApp#readme",
+  "devDependencies": {
+    "vite": "^5.1.4"
+  }
+}
