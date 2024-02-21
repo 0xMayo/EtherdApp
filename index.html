@@ -10,20 +10,41 @@
       integrity="sha512-FhAl50BpK3gf9K//lbAWek9EEQEtGQyyXZNc1fuwcC2tVf2cskiJBcumXY0zJksYtms6S5cqubp1MNfUYTkO2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+        </style>
     <link
       rel="stylesheet"
-      href="./assets/app.css" />
+      href="./src//assets/css/app.css" />
     <script
-      src="./scripts/app.js"
+      src="./src/scripts/app.js"
       type="module"
       defer></script>
     <title>EtherdApp</title>
   </head>
   <body>
-    <header class="top-bar">
-      <h1>EtherdApp</h1>
-    </header>
     <main>
+      <div class="main-wrapper">
+      <div class="wrapper">
+        <div class="pyramid">
+          <div class="square">
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+          </div>
+        </div>
+        
+        <div class="pyramid inverse">
+          <div class="square">
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+            <div class="triangle"></div>
+          </div>
+        </div>
+      </div>
+      <h1>EtherdApp</h1>
       <div class="container">
         <section>
           <div class="form-control">
@@ -32,7 +53,6 @@
               name="accountNumber"
               id="accountNumber"
               placeholder="Wallet to send from" />
-
             <button
               id="checkBalance"
               class="btn btn-primary">
@@ -68,11 +88,11 @@
           </div>
         </section>
       </div>
-      <section>
+      <div class="blockContainer">
         <h4>Total Blocks:</h4>
         <div id="blockNumber">Loading...</div>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
